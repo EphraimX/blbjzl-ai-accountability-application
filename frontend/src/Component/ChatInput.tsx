@@ -16,7 +16,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ value, onChange, onSend }) => {
         placeholder='Typing'
         onKeyPress={(e) => e.key === 'Enter' && onSend()}
       />
-      <button type="button" onClick={onSend}>Spill It, Human</button>
+      <button type="button" onClick={onSend}>I’m Listening</button>
     </div>
   );
 };

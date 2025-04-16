@@ -12,7 +12,7 @@ interface IMessage {
 
 const Chat: React.FC = () => {
   const [messages, setMessages] = useState<IMessage[]>([
-    { sender: 'bot', content: 'Oh great, another human with feelings. I’m Sassiatrist, your totally compassionate psychiatrist. Spill your problems—I’ll try really hard to care.' },
+    { sender: 'bot', content: 'Hey there! I’m BLBJZL, your personal accountability partner AI. I’m here to keep you on track, motivated, and moving toward your goals—no judgment, just solid support. Ready to tackle your to-do list together? Let’s do this. What’s first on the agenda?' },
   ]);
   const [input, setInput] = useState('');
 
@@ -39,7 +39,7 @@ const Chat: React.FC = () => {
         setMessages((prevMessages) => [...prevMessages, newBotMessage]);
       } catch (error) {
         console.error('Error sending message:', error);
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: 'Oh no, the server isn’t responding. Maybe it needs therapy too. Try again before we both have a breakdown.' }]);
+        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: 'Uh-oh, looks like the server’s not responding right now. No stress—we’ve got this. Give it another try, and if it still doesn’t work, we’ll troubleshoot it together. One step at a time!' }]);
       }
 
       setInput('');
