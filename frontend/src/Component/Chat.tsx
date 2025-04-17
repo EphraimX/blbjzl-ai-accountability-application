@@ -22,12 +22,12 @@ const Chat: React.FC = () => {
       setMessages((prevMessages) => [...prevMessages, newUserMessage]);
 
       try {
-        const response = await fetch('http://localhost:3002/chat', {
+        const response = await fetch('https://8000-ephraimx-rollingsconesd-tipwus77j5z.ws-eu118.gitpod.io/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ userMessage: input }),
+          body: JSON.stringify({ user_input: input }),
         });
 
         if (!response.ok) {
@@ -35,7 +35,7 @@ const Chat: React.FC = () => {
         }
 
         const data = await response.json();
-        const newBotMessage: IMessage = { sender: 'bot', content: data.botResponse };
+        const newBotMessage: IMessage = { sender: 'bot', content: data.reply };
         setMessages((prevMessages) => [...prevMessages, newBotMessage]);
       } catch (error) {
         console.error('Error sending message:', error);
@@ -45,6 +45,7 @@ const Chat: React.FC = () => {
       setInput('');
     }
   };
+
 
   return (
     <div className="App">
