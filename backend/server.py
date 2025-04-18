@@ -40,6 +40,11 @@ class ChatResponse(BaseModel):
     session_id: str  # Returned to keep the session alive on frontend
 
 
+@app.get("/")
+async def home():
+    return True
+
+
 # Endpoint for chatting
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):

@@ -1,1 +1,6 @@
-
+name: Client Deploy To Render
+on: push
+jobs:
+  push-to-render:
+    runs-on: ubuntu-latest
+    
