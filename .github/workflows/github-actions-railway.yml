@@ -1,6 +1,0 @@
-name: Server Deploy To Railway
-on: push
-jobs:
-  push-to-railway:
-    runs-on: ubuntu-latest
-    
