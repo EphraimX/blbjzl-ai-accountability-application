@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'backend-summer-dew-9711'
+app = 'blbjzl-accountability-application-backend'
 primary_region = 'cdg'
 
 [build]
