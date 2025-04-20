@@ -4,7 +4,7 @@
 #
 
 app = 'blbjzl-accountability-application-backend'
-primary_region = 'cdg'
+primary_region = 'waw'
 
 [build]
 
