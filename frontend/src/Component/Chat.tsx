@@ -22,7 +22,7 @@ const Chat: React.FC = () => {
       setMessages((prevMessages) => [...prevMessages, newUserMessage]);
 
       try {
-        const response = await fetch('https://8000-ephraimx-rollingsconesd-tipwus77j5z.ws-eu118.gitpod.io/chat', {
+        const response = await fetch('https://blbjzl-accountability-application-backend.fly.dev/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
