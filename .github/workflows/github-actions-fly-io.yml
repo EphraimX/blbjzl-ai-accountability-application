@@ -19,6 +19,6 @@ jobs:
         uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: Run Flyctl Deploy
-        run: flyctl deploy --remote-only --dockerfile backend -a blbjzl-accountability-application-backend
+        run: flyctl deploy backend --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
