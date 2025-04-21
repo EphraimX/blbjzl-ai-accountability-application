@@ -25,7 +25,7 @@ blbjzl-ai-accountability-application/
 
 **Notes:**
 
-- **backend/**: Contains the FastAPI application, including the main application file (`main.py`) and dependencies listed in `requirements.txt`.
+- **backend/**: Contains the FastAPI application, including the main application file (`server.py`) and dependencies listed in `requirements.txt`.
 
 - **frontend/**: Houses the React application, with the main entry point (`App.tsx`) and other components like `Chat.tsx`. The `public/` directory contains the HTML template, and `package.json` lists the frontend dependencies.
 
