@@ -34,17 +34,17 @@ These workflows enable automation of the full build-test-deploy lifecycle.
 1. Clone the repository:
    ```bash
    git clone https://github.com/EphraimX/blbjzl-ai-accountability-application-github-actions.git
-   ``
+   ```
 
 2. Navigate to `backend/` and install Python dependencies:
    ```bash
    pip install -r requirements.txt
-   ``
+   ```
 
 3. Navigate to `frontend/` and install Node packages:
    ```bash
    npm install
-   ``
+   ```
 
 4. You can run both services locally or rely on GitHub Actions for automated deployment.
 
