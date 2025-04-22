@@ -16,7 +16,7 @@ blbjzl-ai-accountability-application/
 
 ## 🚀 GitHub Actions CI/CD
 This project utilizes GitHub Actions to automate the build, test, and deployment processes.
-The workflows are defined in the `.github/workflows/` directory and include steps suc as:
+The workflows are defined in the `.github/workflows/` directory and include steps such as:
 
 - Installing backend and frontend dependencies.
 - Building and deploying both services
@@ -25,10 +25,10 @@ These workflows enable automation of the full build-test-deploy lifecycle.
 
 ## 🧪 Tech Stack
 
-- **Frontend:* React (TypeScrit)
-- **Backend:* FastAPI (Pythn)
-- **CI/CD:* GitHub Actins
-- **Dev Environment:* Gitod
+- **Frontend:** React (TypeScript)
+- **Backend:** FastAPI (Python)
+- **CI/CD:** GitHub Actions
+- **Dev Environment:** Gitpod
 
 ## 📦 Setup
 1. Clone the repository:
