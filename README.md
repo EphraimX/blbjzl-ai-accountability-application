@@ -1,32 +1,53 @@
-## Overview
+# AI Accountability Application (GitHub Actions CI/CD)
 
-This is a simple web application that includes both frontend and backend systems, designed for use in DevOps projects and demonstrations. It provides a foundational structure for integrating CI/CD pipelines, cloud deployments, containerization, and other DevOps practices.
+This repository contains a simple full-stack web application designed for DevOps projects and demonstrations. It showcases CI/CD best practices using **GitHub Actions** for pipeline automation.
 
-**Project Structure**
+## 🛠 Project Structure
 
 ```
 blbjzl-ai-accountability-application/
-├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-│   └── ...
-├── frontend/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── App.tsx
-│   │   ├── Chat.tsx
-│   │   └── ...
-│   ├── package.json
-│   └── ...
+├── backend/           # FastAPI service
+├── frontend/          # React app
+├── .github/
+│   └── workflows/     # GitHub Actions workflows
+├── gitpod.yml         # Gitpod environment configuration
 ├── README.md
-└── ...
 ```
 
-**Notes:**
+## 🚀 GitHub Actions CI/CD
+This project utilizes GitHub Actions to automate the build, test, and deployment processes.
+The workflows are defined in the `.github/workflows/` directory and include steps suc as:
 
-- **backend/**: Contains the FastAPI application, including the main application file (`server.py`) and dependencies listed in `requirements.txt`.
+- Installing backend and frontend dependencies.
+- Building and deploying both services
 
-- **frontend/**: Houses the React application, with the main entry point (`App.tsx`) and other components like `Chat.tsx`. The `public/` directory contains the HTML template, and `package.json` lists the frontend dependencies.
+These workflows enable automation of the full build-test-deploy lifecycle.
 
-- **README.md**: Provides an overview of the project.
+## 🧪 Tech Stack
+
+- **Frontend:* React (TypeScrit)
+- **Backend:* FastAPI (Pythn)
+- **CI/CD:* GitHub Actins
+- **Dev Environment:* Gitod
+
+## 📦 Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/EphraimX/blbjzl-ai-accountability-application-github-actions.git
+   ``
+
+2. Navigate to `backend/` and install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ``
+
+3. Navigate to `frontend/` and install Node packages:
+   ```bash
+   npm install
+   ``
+
+4. You can run both services locally or rely on GitHub Actions for automated deployment.
+
+## 📌 Note
+
+This project serves as a base for testing and deploying AI-related applications with accountability measures using GitHub Actions.
